@@ -117,7 +117,7 @@ git commit -m "initial commit, empty greeetings text file created"
 
 ```
 
-### Commiting modifications
+### Modifications 
 
 ### Type your first greeting in greetings.txt
 
@@ -126,18 +126,19 @@ git commit -m "initial commit, empty greeetings text file created"
 When you modify a tracked file, Git knows about it.
 
 When you do a `git status`, Git says the changes are not yet staged for commit
-i.e. you haven't said you're ready to commit the modification
+i.e. you haven't said you're ready to commit the modification by doing a git add.
 
 ```
 git status
-
 ```
 
-## End of Section 1 challenge
+Leave these changes unstaged for now.
+
+## End of Section 1 Challenge - Adding and Committing Multiple Modifications
 
 - Create a new file in git_practice called goodbyes.txt
 - Add to goodbyes.txt the word for goodbye in your chosen language.
-- This time, instead of adding just one file or change to the staging area, try adding all changes to the staging area using `.` to mean everything. This will stage any changes including both creations and modifications
+- This time, instead of adding just one file or change to the staging area, try adding all changes to the staging area using `.` to mean everything. This will stage any changes including the creation of your new goodbyes.txt AND any unstaged modifications to greetings.txt
 
 ```
 git add .
