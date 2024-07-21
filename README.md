@@ -300,7 +300,7 @@ git checkout french
 
 Change a line in greetings to french
 
-> h world
+> hello world
 > 
 > bonjour
 > 
