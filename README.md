@@ -61,7 +61,7 @@ nothing to commit (create/copy files and use "git add" to track)
 
 - Changes you make inside git_practise folder are tracked by git
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ### Create a new file inside git_practice called greetings.txt
 
@@ -72,11 +72,11 @@ ls
 
 You shouldsee that git_practice folder now contains a plain text file called greetings.txt
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 Now that git_practice is a git repository, its contents are being tracked.
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 ### What is an untracked file?
 
@@ -89,7 +89,7 @@ git status
 
 You should see the status of your repository, which will include your greetings.txt file showing up as "untracked"
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 In Git, an untracked file is a file that exists in your working directory but is not yet part of your repository. This means Git is not tracking changes to it.
 
@@ -104,7 +104,7 @@ git status
 
 This adds greetings.txt to the staging area.
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 ### What is the Staging Area?
 
@@ -123,7 +123,7 @@ git commit -m "initial commit, empty greeetings text file created"
 
 ### Type your first greeting in greetings.txt
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 When you modify a tracked file, Git knows about it.
 
@@ -150,6 +150,8 @@ git add .
 
 # Section 2 - Branching
 
+You can thing of a branch as a sequence of commits.
+
 Git branches allow multiple lines of development within a repository, enabling users to work on different features or fixes independently. Each branch is a separate timeline of commits, starting from a common point and diverging without affecting the main codebase.
 
 Use `git branch` to see which branch you are using
@@ -172,7 +174,7 @@ git branch
 
 Use `git branch` to see which branch you are using
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 colors branch has been created but it is not the active branch, we have not switched to it. This means that any changes we stage and commit will get saved to the master branch, not the colors branch.
 
@@ -187,13 +189,13 @@ git branch
 
 Create a new file in git_practice called somecolors.txt
 Add some text to the file
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 Stage and commit the changes.
 
 Use ls to see which files are present in git_practise
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
 Switch back to master branch and again view the files present in git_practise.
 
@@ -202,7 +204,7 @@ git checkout master
 ls
 ```
 
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 
 See that you have committed changes to the colors branch that are not commited to the master branch
 
@@ -211,7 +213,7 @@ See that you have committed changes to the colors branch that are not commited t
 Create a new branch called cities
 Switch to cities using checkout
 Use `git branch` to check you are on the right branch
-While on the cities branch, create a text file called somecities.txt
+Create a text file called somecities.txt
 Add to the text file the names of some cities, save and close the file
 While still on the cities branch, stage and commit these changes to the repository
 
@@ -219,8 +221,9 @@ While still on the cities branch, stage and commit these changes to the reposito
 
 A Git merge combines changes from different branches into a single branch, integrating updates and resolving any conflicts. It allows developers to consolidate work from various lines of development. Successful merges ensure that all changes are incorporated into the target branch, maintaining a unified codebase.
 
+Assuming you are stll on mater branch, merge branch with colors
+
 ```
-git checkout master
 git merge colors
 ```
 
@@ -236,4 +239,98 @@ colors branch can now be deleted
 git branch -d colors
 ```
 
-![alt text](image-11.png)
+![alt text](images/image-11.png)
+
+## Secton 3 challenge
+
+Merge your cities branch into master such that your additions and modifications are committed to master.
+
+You should see that master has 4 text files: greetings, goodbyes, colors and cities.
+
+Once merged, delete cities.
+
+## Merge conflicts
+
+Merge conflicts happen when two branches have different changes in the same part of a file, and Git can't decide which change to keep. This requires you to manually choose the correct changes. Once resolved, the branches are successfully combined.
+
+Use git branch to check you are on main
+
+```
+git branch
+```
+
+Create a new branch called french but do not switch to it - stay in master
+
+```
+git branch french
+```
+
+Edit greetings.txt to say
+Hello world
+Hola
+Guten tag
+
+![alt text](images/image-12.png)
+
+stage and commit these changes to master.
+
+```
+git add .
+git commit -m "hello world hola guten tag"
+```
+
+Switch to the french branch and make different changes
+
+```
+git checkout french
+```
+
+Change a line in greetings to french
+
+![alt text](images/image-13.png)
+
+Check you are on the french branch and that changes have been committed
+
+```
+git status
+```
+
+Ensuring you are on the french branch, commit the changes
+
+```
+git add .
+git commit -m "bonjour"
+```
+
+Try to merge french with master and view the conflict
+
+```
+git checkout master
+git merge french
+```
+
+![alt text](images/image-14.png)
+
+## Fixing merge conflicts
+
+```
+git status
+```
+
+![alt text](images/image-15.png)
+
+Open greetings.txt to see the annotations Git has made.
+
+![alt text](image.png)
+
+Manually edit the file to how you want it, e.g. keep just bonjour, keep just hola, or keep both words.
+
+You must tell Git you've resolved merge conflicts for a file, via the git add command
+
+```
+git add greetings.txt
+```
+
+Conflict resolved, branches merged.
+
+![alt text](image-1.png)
