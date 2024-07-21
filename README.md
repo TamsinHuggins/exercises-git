@@ -1,4 +1,4 @@
-# Section 1 - Committing changes
+# Section 1 - git init, git status
 
 ## getting started
 
@@ -12,22 +12,22 @@ ls -a
 
 We have created a new, empty directory called git_practice.
 
-<table><tr><td>  ## git status </td></tr></table>
+. git status 
 
+Run the git status command
 ```
 git status
-
 ```
 
 You should a message like:
 
-```
+<br>
 fatal: not a git repository (or any of the parent directories): .git
-```
+<br>
 
 This means we are not inside a git repository. git_practise is just a regular directory/folder. It has no git repository (yet)
 
-## git init
+> git init
 
 Initialise a git repository to track the files in the git_practice folder
 
@@ -38,16 +38,19 @@ git init
 Check the status again
 
 ```
-Git status
+git status
 ```
 
 You will see a response like
+<br>
 
 On branch master
 
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
+
+<br>
 
 ### What is git_practice?
 
