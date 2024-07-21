@@ -213,12 +213,12 @@ See that you have committed changes to the colors branch that are not commited t
 
 ### End of Section 3 Challenge
 
-Create a new branch called cities
-Switch to cities using checkout
-Use `git branch` to check you are on the right branch
-Create a text file called somecities.txt
-Add to the text file the names of some cities, save and close the file
-While still on the cities branch, stage and commit these changes to the repository
+- Create a new branch called cities
+- Switch to cities using checkout
+- Use `git branch` to check you are on the right branch
+- Create a text file called somecities.txt
+- Add to the text file the names of some cities, save and close the file
+- While still on the cities branch, stage and commit these changes to the repository
 
 <br>
 <br>
