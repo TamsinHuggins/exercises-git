@@ -18,9 +18,8 @@ git status
 
 You should a message like:
 
-<br>
-fatal: not a git repository (or any of the parent directories): .git
-<br>
+> fatal: not a git repository (or any of the parent directories): .git
+
 
 This means we are not inside a git repository. git_practise is just a regular directory/folder. It has no git repository (yet)
 
@@ -37,17 +36,16 @@ git status
 ```
 
 You will see a response like
+
+> On branch master
+
+> No commits yet
+
+> nothing to commit (create/copy files and use "git add" to track)
+
 <br>
 
-On branch master
-
-No commits yet
-
-nothing to commit (create/copy files and use "git add" to track)
-
-<br>
-
-> What is git_practice?
+###  What is git_practice?
 
 - It was just a folder/directory on your machine
 
@@ -58,6 +56,8 @@ nothing to commit (create/copy files and use "git add" to track)
 - Changes you make inside git_practise folder are tracked by git
 
 ![alt text](images/image-1.png)
+
+
 
 # Section 2 - Stage and Commit Changes
 
@@ -76,7 +76,7 @@ You shouldsee that git_practice folder now contains a plain text file called gre
 
 Now that git_practice is a git repository, its contents are being tracked.
 
-![alt text](image-16.png)
+![alt text](images/image-16.png)
 
  > What is an untracked file?
 
@@ -104,7 +104,7 @@ This adds greetings.txt to the staging area.
 
 ![alt text](images/image-5.png)
 
-> What is the Staging Area?
+### What is the Staging Area?
 
 The staging area in Git is a space where you can organize and review changes before committing them to the repository. It allows you to selectively stage specific changes, providing greater control over what gets included in your next commit.
 
