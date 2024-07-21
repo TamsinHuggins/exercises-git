@@ -74,7 +74,7 @@ You shouldsee that git_practice folder now contains a plain text file called gre
 
 Now that git_practice is a git repository, its contents are being tracked.
 
-![alt text](image-16.png)
+![alt text](images/image-16.png)
 
 ### What is an untracked file?
 
