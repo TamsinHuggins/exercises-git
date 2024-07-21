@@ -49,7 +49,6 @@ No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
 
-
 ### What is git_practice?
 
 - It was just a folder/directory on your machine
@@ -61,8 +60,6 @@ nothing to commit (create/copy files and use "git add" to track)
 - Changes you make inside git_practise folder are tracked by git
 
 ![alt text](images/image-1.png)
-
-
 
 ### Create a new file inside git_practice called greetings.txt
 
@@ -322,7 +319,7 @@ git status
 
 Open greetings.txt to see the annotations Git has made.
 
-![alt text](image/mergeconflict.png)
+![alt text](images/mergeconflict.png)
 
 Manually edit the file to how you want it, e.g. keep just bonjour, keep just hola, or keep both words.
 
@@ -334,4 +331,4 @@ git add greetings.txt
 
 Conflict resolved, branches merged.
 
-![alt text](image-17.png)
+![alt text](images/image-17.png)
