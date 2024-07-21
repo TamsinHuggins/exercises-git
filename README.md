@@ -279,11 +279,11 @@ git branch french
 
 Edit greetings.txt to say
 
-> Hello world
+> hello world
 > 
-> Hola
+> hola
 > 
-> Guten tag
+> guten tag
 
 stage and commit these changes to master.
 
@@ -300,9 +300,11 @@ git checkout french
 
 Change a line in greetings to french
 
-> Hello world
-> Bonjour
-> Guten tag
+> h world
+> 
+> bonjour
+> 
+> guten tag
 
 Check you are on the french branch and that changes have been committed
 
