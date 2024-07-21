@@ -41,15 +41,12 @@ Git status
 
 You will see a response like
 
-```
-
 On branch master
 
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
 
-```
 
 ### What is git_practice?
 
@@ -62,6 +59,8 @@ nothing to commit (create/copy files and use "git add" to track)
 - Changes you make inside git_practise folder are tracked by git
 
 ![alt text](images/image-1.png)
+
+
 
 ### Create a new file inside git_practice called greetings.txt
 
@@ -227,7 +226,7 @@ Assuming you are stll on mater branch, merge branch with colors
 git merge colors
 ```
 
-You should now see the somecolors.txt appear in the contents of git_practice when you are in the main branch
+You should now see the somecolors.txt appear in the contents of git_practice when you are in the master branch
 
 ```
 ls
@@ -253,7 +252,7 @@ Once merged, delete cities.
 
 Merge conflicts happen when two branches have different changes in the same part of a file, and Git can't decide which change to keep. This requires you to manually choose the correct changes. Once resolved, the branches are successfully combined.
 
-Use git branch to check you are on main
+Use git branch to check you are on master
 
 ```
 git branch
