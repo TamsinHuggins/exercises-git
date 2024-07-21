@@ -76,7 +76,7 @@ You shouldsee that git_practice folder now contains a plain text file called gre
 
 Now that git_practice is a git repository, its contents are being tracked.
 
-![alt text](images/image-6.png)
+![alt text](image-16.png)
 
 ### What is an untracked file?
 
@@ -321,7 +321,7 @@ git status
 
 Open greetings.txt to see the annotations Git has made.
 
-![alt text](image.png)
+![alt text](image/mergeconflict.png)
 
 Manually edit the file to how you want it, e.g. keep just bonjour, keep just hola, or keep both words.
 
@@ -333,4 +333,4 @@ git add greetings.txt
 
 Conflict resolved, branches merged.
 
-![alt text](image-1.png)
+![alt text](image-17.png)
