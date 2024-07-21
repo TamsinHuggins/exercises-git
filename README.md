@@ -56,7 +56,7 @@ You will see a response like
 
 - Changes you make inside git_practise folder are tracked by git
 
-![alt text](images/image-1.png)
+<image src="images/image-1.png" width="500px">
 
 <br>
 <br>
