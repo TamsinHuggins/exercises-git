@@ -1,6 +1,6 @@
 # Section 1 - git init, git status
 
-## getting started
+## 1.1 Initialise a git repository
 
 ```
 mkdir git_practice
@@ -12,9 +12,8 @@ ls -a
 
 We have created a new, empty directory called git_practice.
 
-. git status 
-
 Run the git status command
+
 ```
 git status
 ```
@@ -26,8 +25,6 @@ fatal: not a git repository (or any of the parent directories): .git
 <br>
 
 This means we are not inside a git repository. git_practise is just a regular directory/folder. It has no git repository (yet)
-
-> git init
 
 Initialise a git repository to track the files in the git_practice folder
 
@@ -52,7 +49,7 @@ nothing to commit (create/copy files and use "git add" to track)
 
 <br>
 
-### What is git_practice?
+> What is git_practice?
 
 - It was just a folder/directory on your machine
 
@@ -64,7 +61,11 @@ nothing to commit (create/copy files and use "git add" to track)
 
 ![alt text](images/image-1.png)
 
-### Create a new file inside git_practice called greetings.txt
+# Section 2 - Staging and Committing Changes
+
+### Stage a file
+
+ Create a new file inside git_practice called greetings.txt
 
 ```
 touch greetings.txt
@@ -79,7 +80,7 @@ Now that git_practice is a git repository, its contents are being tracked.
 
 ![alt text](image-16.png)
 
-### What is an untracked file?
+ > What is an untracked file?
 
 In your terminal, check the status of the git repository
 
@@ -94,8 +95,6 @@ You should see the status of your repository, which will include your greetings.
 
 In Git, an untracked file is a file that exists in your working directory but is not yet part of your repository. This means Git is not tracking changes to it.
 
-## git add
-
 To start tracking greetings.txt, you use the `git add` command.
 
 ```
@@ -107,22 +106,20 @@ This adds greetings.txt to the staging area.
 
 ![alt text](images/image-5.png)
 
-### What is the Staging Area?
+> What is the Staging Area?
 
 The staging area in Git is a space where you can organize and review changes before committing them to the repository. It allows you to selectively stage specific changes, providing greater control over what gets included in your next commit.
 
 The git add command adds **changes** to the staging area. This includes new files, modifications, and deletions, preparing them to be included in the next commit.
 
-## git commit
 
 ```
 git commit -m "initial commit, empty greeetings text file created"
 
 ```
 
-### Modifications 
 
-### Type your first greeting in greetings.txt
+### Make a modification
 
 ![alt text](images/image-3.png)
 
@@ -137,7 +134,7 @@ git status
 
 Leave these changes unstaged for now.
 
-## End of Section 1 Challenge - Adding and Committing Multiple Modifications
+## End of Section 2 Challenge - Adding and Committing Multiple Modifications
 
 - Create a new file in git_practice called goodbyes.txt
 - Add to goodbyes.txt the word for goodbye in your chosen language.
@@ -150,13 +147,11 @@ git add .
 - Check the status to see what has been staged
 - Commit these changes to the repository with a suitable commit message
 
-# Section 2 - Branching
+# Section 3 - Branching
 
-You can thing of a branch as a sequence of commits.
+You can think of a branch as a sequence of commits. Each branch is a separate timeline of commits, starting from a common point and diverging.Git branches allow multiple lines of development within a repository, enabling users to work on different features or fixes independently.
 
-Git branches allow multiple lines of development within a repository, enabling users to work on different features or fixes independently. Each branch is a separate timeline of commits, starting from a common point and diverging without affecting the main codebase.
-
-Use `git branch` to see which branch you are using
+Use `git branch` to see which branch you are on
 
 ```
 git branch
@@ -168,17 +163,15 @@ Create a new branch called colors
 git branch colors
 ```
 
-Again use`git branch` to see which branch you are using
+Again use`git branch` to see which branch you are on
 
 ```
 git branch
 ```
 
-Use `git branch` to see which branch you are using
-
 ![alt text](images/image-7.png)
 
-colors branch has been created but it is not the active branch, we have not switched to it. This means that any changes we stage and commit will get saved to the master branch, not the colors branch.
+colors branch has been created but it is not the active branch, i.e we have not switched to it. This means that any changes we stage and commit will get saved to the master branch, not the colors branch.
 
 Do a `git checkout` to switch to the colors branch.
 
@@ -210,7 +203,7 @@ ls
 
 See that you have committed changes to the colors branch that are not commited to the master branch
 
-## End of Section 2 Chellenge
+## End of Section 3 Chellenge
 
 Create a new branch called cities
 Switch to cities using checkout
