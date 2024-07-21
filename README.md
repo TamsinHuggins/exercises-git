@@ -1,16 +1,18 @@
 # Section 1 - Committing changes
 
-## git status
+## getting started
 
 ```
 mkdir git_practice
 cd git_practice
 pwd
-Ls
+ls
 ls -a
 ```
 
 We have created a new, empty directory called git_practice.
+
+## git status
 
 ```
 git status
