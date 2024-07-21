@@ -12,7 +12,7 @@ ls -a
 
 We have created a new, empty directory called git_practice.
 
-## git status
+<table><tr><td>  ## git status </td></tr></table>
 
 ```
 git status
