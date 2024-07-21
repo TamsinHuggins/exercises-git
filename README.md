@@ -1,6 +1,4 @@
-# Section 1 - git init, git status
-
-## 1.1 Initialise a git repository
+# Section 1 - Initialise a git repo
 
 ```
 mkdir git_practice
@@ -61,9 +59,9 @@ nothing to commit (create/copy files and use "git add" to track)
 
 ![alt text](images/image-1.png)
 
-# Section 2 - Staging and Committing Changes
+# Section 2 - Stage and Commit Changes
 
-### Stage a file
+### Stage a change (file added)
 
  Create a new file inside git_practice called greetings.txt
 
@@ -112,6 +110,8 @@ The staging area in Git is a space where you can organize and review changes bef
 
 The git add command adds **changes** to the staging area. This includes new files, modifications, and deletions, preparing them to be included in the next commit.
 
+### Commit changes
+
 
 ```
 git commit -m "initial commit, empty greeetings text file created"
@@ -119,7 +119,7 @@ git commit -m "initial commit, empty greeetings text file created"
 ```
 
 
-### Make a modification
+### Stage a change (modification)
 
 ![alt text](images/image-3.png)
 
@@ -134,7 +134,7 @@ git status
 
 Leave these changes unstaged for now.
 
-## End of Section 2 Challenge - Adding and Committing Multiple Modifications
+### End of Section 2 Challenge - Adding and Committing Multiple Modifications
 
 - Create a new file in git_practice called goodbyes.txt
 - Add to goodbyes.txt the word for goodbye in your chosen language.
@@ -212,7 +212,7 @@ Create a text file called somecities.txt
 Add to the text file the names of some cities, save and close the file
 While still on the cities branch, stage and commit these changes to the repository
 
-# Section 3 Merging
+# Section 4 Merging
 
 A Git merge combines changes from different branches into a single branch, integrating updates and resolving any conflicts. It allows developers to consolidate work from various lines of development. Successful merges ensure that all changes are incorporated into the target branch, maintaining a unified codebase.
 
@@ -236,7 +236,7 @@ git branch -d colors
 
 ![alt text](images/image-11.png)
 
-## Secton 3 challenge
+## Secton 4 challenge
 
 Merge your cities branch into master such that your additions and modifications are committed to master.
 
