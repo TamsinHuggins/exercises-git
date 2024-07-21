@@ -184,6 +184,8 @@ git branch
 
 Create a new file in git_practice called somecolors.txt
 Add some text to the file
+
+
 ![alt text](images/image-8.png)
 
 Stage and commit the changes.
