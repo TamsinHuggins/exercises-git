@@ -58,6 +58,10 @@ You will see a response like
 
 ![alt text](images/image-1.png)
 
+<br>
+<br>
+<br>
+
 # Section 2 - Stage and Commit Changes
 
 ### Stage a change (file added)
@@ -144,6 +148,10 @@ git add .
 - Check the status to see what has been staged
 - Commit these changes to the repository with a suitable commit message
 
+<br>
+<br>
+<br>
+
 # Section 3 - Branching
 
 You can think of a branch as a sequence of commits. Each branch is a separate timeline of commits, starting from a common point and diverging.Git branches allow multiple lines of development within a repository, enabling users to work on different features or fixes independently.
@@ -210,6 +218,10 @@ Create a text file called somecities.txt
 Add to the text file the names of some cities, save and close the file
 While still on the cities branch, stage and commit these changes to the repository
 
+<br>
+<br>
+<br>
+
 # Section 4 - Introducing Merging
 
 A Git merge combines changes from different branches into a single branch, integrating updates and resolving any conflicts. It allows developers to consolidate work from various lines of development. Successful merges ensure that all changes are incorporated into the target branch, maintaining a unified codebase.
@@ -242,7 +254,11 @@ You should see that master has 4 text files: greetings, goodbyes, colors and cit
 
 Once merged, delete cities.
 
-# Section 5 Merge Conflicts
+<br>
+<br>
+<br>
+
+# Section 5 - Merge Conflicts
 
 ### What is a Merge Conflict?
 
@@ -307,7 +323,7 @@ git merge french
 
 ![alt text](images/image-14.png)
 
-## Fixing Merge Conflicts
+### Fixing Merge Conflicts
 
 ```
 git status
