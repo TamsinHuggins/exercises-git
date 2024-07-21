@@ -196,7 +196,7 @@ Stage and commit the changes.
 
 Use ls to see which files are present in git_practise
 
-<image src="images/image-8.png" width="500px" />
+> greetings.txt  goodbyes.txt  somecolors.txt
 
 Switch back to master branch and again view the files present in git_practise.
 
@@ -204,8 +204,10 @@ Switch back to master branch and again view the files present in git_practise.
 git checkout master
 ls
 ```
+You should not see somecolors.txt here since it was not committed to master
 
-<image src="images/image-10.png" width="500px" />
+> greetings.txt  goodbyes.txt
+
 
 See that you have committed changes to the colors branch that are not commited to the master branch
 
@@ -244,7 +246,6 @@ colors branch can now be deleted
 git branch -d colors
 ```
 
-<image src="images/image-11.png" width="500px" />
 
 ### End of secton 4 Challenge
 
