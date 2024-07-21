@@ -1,6 +1,6 @@
 # Section 1 - Initialise a git repo
 
-### Create an empty folder
+### Create an empty folder called git_practice
 
 ```
 mkdir git_practice
