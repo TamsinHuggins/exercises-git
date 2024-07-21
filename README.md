@@ -1,3 +1,5 @@
+# Section 1 - Committing changes
+
 ## git status
 
 ```
@@ -72,9 +74,9 @@ You shouldsee that git_practice folder now contains a plain text file called gre
 
 ![alt text](image-2.png)
 
-### Type your first greeting in greetings.txt
+Now that git_practice is a git repository, its contents are being tracked.
 
-![alt text](image-3.png)
+![alt text](image-6.png)
 
 ### What is an untracked file?
 
@@ -93,14 +95,14 @@ In Git, an untracked file is a file that exists in your working directory but is
 
 ## git add
 
-To start tracking greetings.txt, you use the `git add` command, which stages the file, preparing it to be included in the next commit.
+To start tracking greetings.txt, you use the `git add` command.
 
 ```
 git add greetings.txt
 git status
 ```
 
-File is added to the staging area.
+This adds greetings.txt to the staging area.
 
 ![alt text](image-5.png)
 
@@ -108,9 +110,42 @@ File is added to the staging area.
 
 The staging area in Git is a space where you can organize and review changes before committing them to the repository. It allows you to selectively stage specific changes, providing greater control over what gets included in your next commit.
 
+The git add command adds **changes** to the staging area. This includes new files, modifications, and deletions, preparing them to be included in the next commit.
+
 ## git commit
 
 ```
-git commit -m "initial commit, added some text into greetings"
+git commit -m "initial commit, empty greeetings text file created"
 
 ```
+
+### Commiting modifications
+
+### Type your first greeting in greetings.txt
+
+![alt text](image-3.png)
+
+When you modify a tracked file, Git knows about it.
+
+When you do a `git status`, Git says the changes are not yet staged for commit
+i.e. you haven't said you're ready to commit the modification
+
+```
+git status
+
+```
+
+## End of section challenge
+
+Create a new file in git_practice called goodbyes.txt
+Add to goodbyes.txt the word for goodbye in your chosen language.
+This time, instead of adding just one file or change to the staging area, try adding all changes to the staging area using `.` to mean everything
+
+```
+git add .
+```
+
+Check the status to see what has been staged
+Commit these changes to the repository with a suitable commit message
+
+## Section 2 - Branching
