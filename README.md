@@ -280,7 +280,9 @@ git branch french
 Edit greetings.txt to say
 
 > Hello world
+> 
 > Hola
+> 
 > Guten tag
 
 stage and commit these changes to master.
