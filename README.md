@@ -92,7 +92,7 @@ git status
 
 You should see the status of your repository, which will include your greetings.txt file showing up as "untracked"
 
-![alt text](images/image-4.png)
+<image src="images/image-4.png" width="500px" />
 
 In Git, an untracked file is a file that exists in your working directory but is not yet part of your repository. This means Git is not tracking changes to it.
 
@@ -105,7 +105,7 @@ git status
 
 This adds greetings.txt to the staging area.
 
-![alt text](images/image-5.png)
+<image src="images/image-5.png" width="500px" />
 
 ### What is the Staging Area?
 
@@ -122,7 +122,7 @@ git commit -m "initial commit, empty greeetings text file created"
 
 ### Make a modification and check the status
 
-![alt text](images/image-3.png)
+<image src="images/image-3.png" width="500px" />
 
 When you modify a tracked file, Git knows about it.
 
@@ -174,7 +174,7 @@ Again use`git branch` to see which branch you are on
 git branch
 ```
 
-![alt text](images/image-7.png)
+<image src="images/image-7.png" width="500px" />
 
 colors branch has been created but it is not the active branch, i.e we have not switched to it. This means that any changes we stage and commit will get saved to the master branch, not the colors branch.
 
@@ -190,13 +190,13 @@ git branch
 Create a new file in git_practice called somecolors.txt
 Add some text to the file
 
-![alt text](images/image-8.png)
+<image src="images/image-8.png" width="500px" />
 
 Stage and commit the changes.
 
 Use ls to see which files are present in git_practise
 
-![alt text](images/image-9.png)
+<image src="images/image-8.png" width="500px" />
 
 Switch back to master branch and again view the files present in git_practise.
 
@@ -205,7 +205,7 @@ git checkout master
 ls
 ```
 
-![alt text](images/image-10.png)
+<image src="images/image-10.png" width="500px" />
 
 See that you have committed changes to the colors branch that are not commited to the master branch
 
@@ -244,7 +244,7 @@ colors branch can now be deleted
 git branch -d colors
 ```
 
-![alt text](images/image-11.png)
+<image src="images/image-11.png" width="500px" />
 
 ### End of secton 4 Challenge
 
@@ -321,7 +321,7 @@ git checkout master
 git merge french
 ```
 
-![alt text](images/image-14.png)
+<image src="images/image-14.png" width="500px" />
 
 ### Fixing Merge Conflicts
 
@@ -329,7 +329,7 @@ git merge french
 git status
 ```
 
-![alt text](images/image-15.png)
+<image src="images/image-15.png" width="500px" />
 
 Open greetings.txt to see the annotations Git has made.
 
@@ -345,4 +345,4 @@ git add greetings.txt
 
 Conflict resolved, branches merged.
 
-![alt text](images/image-17.png)
+<image src="images/image-17.png" width="500px" />
