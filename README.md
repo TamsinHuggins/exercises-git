@@ -1,5 +1,7 @@
 # Section 1 - Initialise a git repo
 
+### Create an empty folder
+
 ```
 mkdir git_practice
 cd git_practice
@@ -20,10 +22,9 @@ You should a message like:
 
 > fatal: not a git repository (or any of the parent directories): .git
 
-
 This means we are not inside a git repository. git_practise is just a regular directory/folder. It has no git repository (yet)
 
-Initialise a git repository to track the files in the git_practice folder
+### Initialise a git repository to track the files in the git_practice folder
 
 ```
 git init
@@ -45,7 +46,7 @@ You will see a response like
 
 <br>
 
-###  What is git_practice?
+### What is git_practice?
 
 - It was just a folder/directory on your machine
 
@@ -57,13 +58,11 @@ You will see a response like
 
 ![alt text](images/image-1.png)
 
-
-
 # Section 2 - Stage and Commit Changes
 
 ### Stage a change (file added)
 
- Create a new file inside git_practice called greetings.txt
+Create a new file inside git_practice called greetings.txt
 
 ```
 touch greetings.txt
@@ -78,7 +77,7 @@ Now that git_practice is a git repository, its contents are being tracked.
 
 ![alt text](images/image-16.png)
 
- > What is an untracked file?
+### What is an Untracked File?
 
 In your terminal, check the status of the git repository
 
@@ -112,14 +111,12 @@ The git add command adds **changes** to the staging area. This includes new file
 
 ### Commit changes
 
-
 ```
 git commit -m "initial commit, empty greeetings text file created"
 
 ```
 
-
-### Stage a change (modification)
+### Make a modification and check the status
 
 ![alt text](images/image-3.png)
 
@@ -180,11 +177,10 @@ git checkout colors
 git branch
 ```
 
-## Work on the colors branch
+### Make a commit to the colors branch
 
 Create a new file in git_practice called somecolors.txt
 Add some text to the file
-
 
 ![alt text](images/image-8.png)
 
@@ -205,7 +201,7 @@ ls
 
 See that you have committed changes to the colors branch that are not commited to the master branch
 
-## End of Section 3 Chellenge
+### End of Section 3 Challenge
 
 Create a new branch called cities
 Switch to cities using checkout
@@ -214,7 +210,7 @@ Create a text file called somecities.txt
 Add to the text file the names of some cities, save and close the file
 While still on the cities branch, stage and commit these changes to the repository
 
-# Section 4 Merging
+# Section 4 - Introducing Merging
 
 A Git merge combines changes from different branches into a single branch, integrating updates and resolving any conflicts. It allows developers to consolidate work from various lines of development. Successful merges ensure that all changes are incorporated into the target branch, maintaining a unified codebase.
 
@@ -238,7 +234,7 @@ git branch -d colors
 
 ![alt text](images/image-11.png)
 
-## Secton 4 challenge
+### End of secton 4 Challenge
 
 Merge your cities branch into master such that your additions and modifications are committed to master.
 
@@ -246,7 +242,9 @@ You should see that master has 4 text files: greetings, goodbyes, colors and cit
 
 Once merged, delete cities.
 
-## Merge conflicts
+# Section 5 Merge Conflicts
+
+### What is a Merge Conflict?
 
 Merge conflicts happen when two branches have different changes in the same part of a file, and Git can't decide which change to keep. This requires you to manually choose the correct changes. Once resolved, the branches are successfully combined.
 
@@ -263,11 +261,10 @@ git branch french
 ```
 
 Edit greetings.txt to say
-Hello world
-Hola
-Guten tag
 
-![alt text](images/image-12.png)
+> Hello world
+> Hola
+> Guten tag
 
 stage and commit these changes to master.
 
@@ -284,7 +281,9 @@ git checkout french
 
 Change a line in greetings to french
 
-![alt text](images/image-13.png)
+> Hello world
+> Bonjour
+> Guten tag
 
 Check you are on the french branch and that changes have been committed
 
@@ -308,7 +307,7 @@ git merge french
 
 ![alt text](images/image-14.png)
 
-## Fixing merge conflicts
+## Fixing Merge Conflicts
 
 ```
 git status
