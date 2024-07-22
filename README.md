@@ -1,7 +1,16 @@
 # Section 1 - Initialise a git repo
 
-### Create an empty folder called git_practice
 
+### Configure Git
+```
+git config --global user.name "your name"
+git config --global user.email "any@email.com"
+git config --global core.editor notepad
+
+```
+
+
+### Create an empty folder called git_practice
 ```
 mkdir git_practice
 cd git_practice
