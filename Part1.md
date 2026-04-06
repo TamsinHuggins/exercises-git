@@ -1,13 +1,26 @@
-# Git & GitHub Workshop
+# Git & GitHub Workshop Part 1 - Working with a Local Repo
 
-## Introduction : Why Version Control?
+## Introduction : Why do developers use Git & Github?
 
 <image src="images/version-control-can-anyone-relate-v5.webp" width="500px" />
 
-## Section 1 - Initialise a git repo
+Has anyone worked on a collaborative document before?
+This is much better than sending versions back and forth. But there are still problems. What would happen if we managed our codebase in, say, Google Drive?
+
+We can think of Git & GitHub in 2 parts:
+
+Version control (the Git part) - this is the system that tracks changes to files and allows you to manage different versions of your codebase.
+Collaboration (the GitHub part) - this is the platform that allows multiple people to work together on a codebase, share their changes, and manage contributions.
+
+
+
+## Section 1 - Initialise a Git repo
 
 
 ### Configure Git
+
+You need to tell Git who you are. 
+
 ```
 git config --global user.name "your name"
 git config --global user.email "any@email.com"
