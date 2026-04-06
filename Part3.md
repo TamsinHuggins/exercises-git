@@ -14,30 +14,26 @@ Try checking the option that says **Create Git Repository**.
 
 Checking this box will automatically run `git init` for you and create a local Git repository in your project folder. 
 
-### Step 2 - Create a `.gitignore` file
-
+### Step 2 - Review your `.gitignore` file
 
 A `.gitignore` file is a simple list of files and folders you want Git to leave alone and not include in commits.
 
-IntelliJ generates a `.idea/` folder to store your project settings. Most of this is personal to your machine and should **not** be committed to Git.
-
-In the root of your project, create a file called `.gitignore` and add the following:
+When you build a project with "Create Git" selected, IntelliJ automatically creates a `.gitignore` for you at the root of your project. Open it and you should see entries like:
 
 ```
 # IntelliJ project files
 .idea/
-*.iml
 
 # Maven build output
 target/
-
-# Compiled Java classes
-*.class
 ```
 
-> 💡 Without this, your teammates will constantly see noisy, irrelevant changes to IDE config files every time they pull your work. The `target/` folder is just temporary build output that Maven can recreate automatically, so it should never be committed.
+Here is what the key entries mean:
 
-> 💡 Your `pom.xml` file **should** be committed - it is the heart of a Maven project and tells everyone on the team which dependencies and build settings the project uses.
+- `.idea/` - IntelliJ stores your personal IDE settings here. These are specific to your machine and would create noisy, irrelevant changes for your teammates if committed.
+- `target/` - temporary build output that Maven recreates automatically. This also covers all compiled `.class` files since Maven always outputs them here.
+
+> 💡 Your `pom.xml` file **should** be committed - it defines how the project is built and which libraries it uses, so everyone on the team needs it.
 
 ---
 
