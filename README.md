@@ -1,4 +1,10 @@
-# Section 1 - Initialise a git repo
+# Git & GitHub Workshop
+
+## Introduction : Why Version Control?
+
+<image src="images/version-control-can-anyone-relate-v5.webp" width="500px" />
+
+## Section 1 - Initialise a git repo
 
 
 ### Configure Git
@@ -11,17 +17,40 @@ git config --global core.editor notepad
 
 
 ### Create an empty folder called git_practice
+
+
+OPTIONAL: create in command line.
 ```
 mkdir git_practice
 cd git_practice
+```
+
+
+Open a git terminal in the git_practice folder.
+Check that you are inside git_practice!
+
+```
 pwd
+```
+
+
+Show the files inside your current directory (which should be git_practice!)
+
+```
 ls
+```
+
+Show any hidden files inside your current directory
+
+```
 ls -a
 ```
 
-We have created a new, empty directory called git_practice.
+We have created a new, empty directory called git_practice. We have not used any git commands yet.
 
-Run the git status command
+### Run our first git command
+
+Run the git status command. IMPORTANT: always run a git status before you run a git init. Why?
 
 ```
 git status
@@ -71,18 +100,18 @@ You will see a response like
 <br>
 <br>
 
-# Section 2 - Stage and Commit Changes
+## Section 2 - Stage and Commit Changes
 
 ### Stage a change (file added)
 
-Create a new file inside git_practice called greetings.txt
+Create a new file inside git_practice called **greetings.txt**
+Run ls again to view the contents of git_practice.
 
 ```
-touch greetings.txt
 ls
 ```
 
-You shouldsee that git_practice folder now contains a plain text file called greetings.txt
+You should see that git_practice folder now contains a plain text file called greetings.txt
 
 <image src="images/image-2.png" width="500px" />
 
@@ -161,7 +190,7 @@ git add .
 <br>
 <br>
 
-# Section 3 - Branching
+## Section 3 - Branching
 
 You can think of a branch as a sequence of commits. Each branch is a separate timeline of commits, starting from a common point and diverging.Git branches allow multiple lines of development within a repository, enabling users to work on different features or fixes independently.
 
@@ -233,7 +262,7 @@ See that you have committed changes to the colors branch that are not commited t
 <br>
 <br>
 
-# Section 4 - Introducing Merging
+## Section 4 - Introducing Merging
 
 A Git merge combines changes from different branches into a single branch, integrating updates and resolving any conflicts. It allows developers to consolidate work from various lines of development. Successful merges ensure that all changes are incorporated into the target branch, maintaining a unified codebase.
 
@@ -256,7 +285,7 @@ git branch -d colors
 ```
 
 
-### End of secton 4 Challenge
+### End of Section 4 Challenge
 
 Merge your cities branch into master such that your additions and modifications are committed to master.
 
@@ -268,7 +297,7 @@ Once merged, delete cities.
 <br>
 <br>
 
-# Section 5 - Merge Conflicts
+## Section 5 - Merge Conflicts
 
 ### What is a Merge Conflict?
 
