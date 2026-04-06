@@ -6,14 +6,13 @@
 
 IntelliJ has Git support built in - you can use the user interface to manage your commits, branches, and remote connections without using the commands if you prefer.
 
-### Step 1 - Create a new Maven project
+### Step 1 - Create a new Java (Maven) project
 
-Create your Maven project as normal.
+Create your project as normal using **File > New > Project...**.
 
-If IntelliJ shows an **Add Git Repository** option during setup, tick it. If not, open the project first, then go to:
+Try checking the option that says **Create Git Repository**.
 
-> **VCS** > **Enable Version Control Integration** > **Git**
-
+Checking this box will automatically run `git init` for you and create a local Git repository in your project folder. 
 
 ### Step 2 - Create a `.gitignore` file
 
